@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+if [ ! -f /usr/local/bin/$1 ];then
+   echo "#!/usr/bin/bash" >/usr/local/bin/$1
+   chmod +x /usr/local/bin/$1
+   nano /usr/local/bin/$1
+else
+   echo "File exists, try another file name"
+
+fi
